@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		68C60CAE1FA33ED5001AB8E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60CAD1FA33ED5001AB8E4 /* main.swift */; };
+		68C60CB91FA340CD001AB8E4 /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60CB81FA340CD001AB8E4 /* IWeapon.swift */; };
+		68C60CBB1FA340D5001AB8E4 /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60CBA1FA340D5001AB8E4 /* Gun.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		68C60CAA1FA33ED5001AB8E4 /* BR */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BR; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C60CAD1FA33ED5001AB8E4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		68C60CB81FA340CD001AB8E4 /* IWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
+		68C60CBA1FA340D5001AB8E4 /* Gun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,27 @@
 		68C60CAC1FA33ED5001AB8E4 /* BR */ = {
 			isa = PBXGroup;
 			children = (
+				68C60CB71FA34027001AB8E4 /* Classes */,
+				68C60CB61FA34016001AB8E4 /* Interfaces */,
 				68C60CAD1FA33ED5001AB8E4 /* main.swift */,
 			);
 			path = BR;
+			sourceTree = "<group>";
+		};
+		68C60CB61FA34016001AB8E4 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				68C60CB81FA340CD001AB8E4 /* IWeapon.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		68C60CB71FA34027001AB8E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68C60CBA1FA340D5001AB8E4 /* Gun.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68C60CAE1FA33ED5001AB8E4 /* main.swift in Sources */,
+				68C60CBB1FA340D5001AB8E4 /* Gun.swift in Sources */,
+				68C60CB91FA340CD001AB8E4 /* IWeapon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
