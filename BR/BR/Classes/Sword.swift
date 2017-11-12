@@ -19,7 +19,13 @@ class Sword: IWeapon {
     var year: Float
     
     required init(name: String, height: Float, width: Float, weight: Float, price: Float, legendary: Bool = false, year: Float) {
-        
+        self.name = name
+        self.height = height
+        self.width = width
+        self.weight = weight
+        self.price = price
+        self.legendary = legendary
+        self.year = year
     }
     
     func duration() -> Int {

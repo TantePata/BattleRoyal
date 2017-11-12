@@ -10,6 +10,7 @@
 		68C60CAE1FA33ED5001AB8E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60CAD1FA33ED5001AB8E4 /* main.swift */; };
 		68C60CB91FA340CD001AB8E4 /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60CB81FA340CD001AB8E4 /* IWeapon.swift */; };
 		68C60CBB1FA340D5001AB8E4 /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C60CBA1FA340D5001AB8E4 /* Gun.swift */; };
+		BF56C6BC1FB89C83005638DB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56C6BB1FB89C83005638DB /* Character.swift */; };
 		BFD193191FA341AB00790689 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD193181FA341AB00790689 /* Sword.swift */; };
 		BFD1931C1FA3472E00790689 /* Excalibur.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1931B1FA3472E00790689 /* Excalibur.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		68C60CAD1FA33ED5001AB8E4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		68C60CB81FA340CD001AB8E4 /* IWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
 		68C60CBA1FA340D5001AB8E4 /* Gun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
+		BF56C6BB1FB89C83005638DB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		BFD193181FA341AB00790689 /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		BFD1931B1FA3472E00790689 /* Excalibur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excalibur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				68C60CBA1FA340D5001AB8E4 /* Gun.swift */,
 				BFD193181FA341AB00790689 /* Sword.swift */,
 				BFD1931A1FA3470E00790689 /* Swords */,
+				BF56C6BB1FB89C83005638DB /* Character.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				BFD1931C1FA3472E00790689 /* Excalibur.swift in Sources */,
 				68C60CAE1FA33ED5001AB8E4 /* main.swift in Sources */,
 				BFD193191FA341AB00790689 /* Sword.swift in Sources */,
+				BF56C6BC1FB89C83005638DB /* Character.swift in Sources */,
 				68C60CBB1FA340D5001AB8E4 /* Gun.swift in Sources */,
 				68C60CB91FA340CD001AB8E4 /* IWeapon.swift in Sources */,
 			);

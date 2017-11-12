@@ -8,5 +8,9 @@
 
 import Foundation
 
-print("Hello, World!")
+print("------------------------")
+print("|                      |")
+print("| BATTELU LOYALUUUUUU! |")
+print("|                      |")
+print("------------------------")
 
