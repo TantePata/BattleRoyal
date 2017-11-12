@@ -18,13 +18,13 @@ class Sword: IWeapon {
     var legendary: Bool
     var year: Float
     
-    required init(name: String, height: Float, width: Float, weight: Float, price: Float, legendary: Bool = false, year: Float) {
+    required init(name: String, height: Float, width: Float, weight: Float, price: Float, year: Float) {
         self.name = name
         self.height = height
         self.width = width
         self.weight = weight
         self.price = price
-        self.legendary = legendary
+        self.legendary = false
         self.year = year
     }
     

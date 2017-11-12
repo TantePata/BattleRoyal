@@ -12,7 +12,7 @@ class Character {
     var name: String
     var health : Int
     var hitChance : Int
-    var weapon : IWeapon
+    var weapon : IWeapon?
     
     required init(name: String, health: Int, weapon: IWeapon) {
         self.name = name
@@ -35,7 +35,7 @@ class Character {
     
     func attack(character: Character) {
         if character.name != self.name && self.hitChance >= Int(arc4random_uniform(101)){
-            character.protect(valeurAttaque: self.weapon.damage())
+            character.protect(valeurAttaque: (self.weapon?.damage())!)
         }
     }
 }
