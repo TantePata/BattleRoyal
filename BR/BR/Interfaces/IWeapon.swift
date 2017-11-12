@@ -14,7 +14,7 @@ protocol IWeapon {
     var width : Float {get set}
     var weight : Float {get set}
     var price : Float {get set}
-        
+    
     func duration() -> Int
     
     func damage() -> Int

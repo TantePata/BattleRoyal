@@ -16,12 +16,7 @@ class Character {
     
     required init(name: String, health: Int, weapon: IWeapon) {
         self.name = name
-        if health < 25000{
-            self.health = 25000
-        }
-        else {
-            self.health = health
-        }
+        self.health = (health < 25000 ? 25000 : health)
         self.hitChance = Int(arc4random_uniform(21) + 50);
         self.weapon = weapon
     }
