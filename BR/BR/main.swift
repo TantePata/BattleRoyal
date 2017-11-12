@@ -8,28 +8,57 @@
 
 import Foundation
 
-print("------------------------")
-print("|                      |")
-print("| BATTELU LOYALUUUUUU! |")
-print("|                      |")
-print("------------------------")
 
-var swords: [String: Sword] = [
-    "iDagger": Sword(name: "Dague de fer",               height: 20.0, width: 5.0, weight: 2.0, price: 18.0, year: 5),
-    "iSword": Sword(name: "Epee de fer",                 height: 60.0, width: 7.0, weight: 9.0, price: 45.0, year: 5),
-    "iGreatSword": Sword(name: "Grande Epee de fer",     height: 110.0, width: 9.0, weight: 16, price: 90.0, year: 5),
-    "sDagger": Sword(name: "Dague d'acier",              height: 20.0, width: 5.0, weight: 2.5, price: 18.0, year: 5),
-    "sSword": Sword(name: "Epee d'acier",                height: 60.0, width: 7.0, weight: 10.0, price: 45.0, year: 5),
-    "sGreatSword": Sword(name: "Grande Epee d'acier",    height: 110.0, width: 9.0, weight: 17.0, price: 90.0, year: 5),
-    "lFlame": Excalibur(name: "LA FLAMME ETERNELLE DE L'EMPIRE DES HOMMES", height: 110.0, width: 9.0, weight: 17.0, price: 90.0, year: 200)
+
+
+var swords: [Sword] = [
+    Sword(name: "Une Dague de fer",               height: 20.0, width: 5.0, weight: 2.0, price: 18.0, year: 5),
+    Sword(name: "Une Epee de fer",                 height: 60.0, width: 7.0, weight: 9.0, price: 45.0, year: 5),
+    Sword(name: "Une Grande Epee de fer",     height: 110.0, width: 9.0, weight: 16, price: 90.0, year: 5),
+    Sword(name: "Une Dague d'acier",              height: 20.0, width: 5.0, weight: 2.5, price: 18.0, year: 5),
+    Sword(name: "Une Epee d'acier",                height: 60.0, width: 7.0, weight: 10.0, price: 45.0, year: 5),
+    Sword(name: "Une Grande Epee d'acier",    height: 110.0, width: 9.0, weight: 17.0, price: 90.0, year: 5),
+    Excalibur(name: "LA FLAMME ETERNELLE DE L'EMPIRE DES HOMMES", height: 110.0, width: 9.0, weight: 17.0, price: 90.0, year: 200)
 ]
-print("Liste des armes : ")
-for weapon in swords.values {
-    print(weapon.name)
+
+var fighters: [Character] = [
+    Character(name: "Lakiss",       health: 40000,  weapon: swords[0]),
+    Character(name: "Svorn",        health: 25,     weapon: swords[2])
+]
+
+
+
+
+
+print("-------------------------------------------------")
+print("|                                               |")
+print("| BIENVENUE DANS LA GRANDE BATTELU LOUAYALUUUUU |")
+print("|                                               |")
+print("-------------------------------------------------\n")
+
+print("Quel est ton nom jeune combattant ? : ")
+readLine()!
+
+print("\nTrès bien Jean Jacques, choisis ton arme :")
+for (index, sword) in swords.enumerated() {
+    print(index, " - ", sword.name)
 }
 
-var fighters: [String: Character] = [
-    "Svorn": Character(name: "Svorn", health: 40000, weapon: swords["iGreatSword"]!)
-]
+print("")
 
+var chosenWeapon = swords[Int(readLine()!)!]
 
+fighters.append(Character(name: "Jean Jacques", health: 40000, weapon: chosenWeapon))
+
+print("Tu as choisi comme arme : ",chosenWeapon.name)
+
+print("\nListe des combattants : ")
+for fighter in fighters {
+    print("-" + fighter.name + " avec " + (fighter.weapon?.name)!)
+}
+
+print("\n-------------------------------------------------")
+print("|                    FIGHT                      |")
+print("-------------------------------------------------\n")
+
+//A TOI HERVÉ
